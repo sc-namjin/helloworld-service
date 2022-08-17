@@ -15,7 +15,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-service-v1
+  name: helloworld-service
   labels:
     app: helloworld-service
     version: "1.0"
@@ -37,16 +37,7 @@ spec:
     spec:
       containers:
       - name: helloworld-service
-        image: saturnism/helloworld-service-istio:1.0
-        livenessProbe:
-          initialDelaySeconds: 60
-          httpGet:
-            path: /actuator/health
-            port: 8080
-        readinessProbe:
-          httpGet:
-            path: /hello/ready
-            port: 8080
+        image: namjinpark/helloworld-service:0.0.1
         ports:
         - name: http
           containerPort: 8080
