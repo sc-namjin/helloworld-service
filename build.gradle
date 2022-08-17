@@ -55,13 +55,13 @@ tasks.withType(JavaCompile) {
 
 jar {
 	enabled = false
-    archiveBaseName = 'guestbook-ui-plain'
+    archiveBaseName = 'guestbook-service-plain'
     archiveVersion =  '0.0.1'
 }
 
 bootJar {
 	//enabled = true
-	mainClass = 'com.example.guestbook.HelloworldUiApplication'
+	mainClass = 'com.example.guestbook.HelloworldController'
 	//archiveFileName = 'guestbook-service-0.0.1.jar'
 	archiveBaseName = description
     //archiveVersion =  version
