@@ -61,7 +61,7 @@ jar {
 
 bootJar {
 	//enabled = true
-	mainClass = 'com.example.guestbook.HelloworldController'
+	mainClass = 'com.example.guestbook.HelloworldApplication'
 	//archiveFileName = 'guestbook-service-0.0.1.jar'
 	archiveBaseName = description
     //archiveVersion =  version
